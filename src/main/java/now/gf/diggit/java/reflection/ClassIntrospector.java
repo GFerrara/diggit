@@ -22,7 +22,7 @@ public class ClassIntrospector {
 		this.metadataCacheMap = cacheMap == null ? new HashMap<String, ClassMetadata>() : cacheMap;
 	}
 	
-	public <T extends Annotation> void registerAnnotationListener(final Class<T> annotation, IAnnotationListener<T> annotationListener) {
+	public <T extends Annotation> void registerAnnotationListener(final Class<T> annotation, final IAnnotationListener<T> annotationListener) {
 		if (annotation == null || annotationListener == null) throw new IllegalArgumentException("Both annotation and annotation listener must be specified");
 			
 		AnnotationHelper.instance().registerAnnotationListener(annotation, annotationListener);
