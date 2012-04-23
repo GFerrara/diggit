@@ -1,0 +1,24 @@
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# Eclipse #
+.settings/
+.metadata
+*.launch
+bin/
+
+# Netbeans ignore personal stuff #
+nbproject/private/
+
+# Maven #
+target/
+
+# Generic files #
+*~
+*.lock
+*.DS_Store
+
