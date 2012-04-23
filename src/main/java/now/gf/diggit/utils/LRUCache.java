@@ -20,7 +20,7 @@ public class LRUCache <K,V> extends LinkedHashMap<K, V>{
 	 * 
 	 * @param maxSize maximum cache size: must be at least 1
 	 */
-	public LRUCache(int maxSize) {
+	public LRUCache(final int maxSize) {
 		super(16, 0.75f, true);
 		if (maxSize < 1) throw new IllegalArgumentException("LRU cache must contain at least one entry");
 		this.maxSize = maxSize;

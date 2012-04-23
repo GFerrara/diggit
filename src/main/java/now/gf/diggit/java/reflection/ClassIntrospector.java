@@ -36,7 +36,7 @@ public class ClassIntrospector {
 	 * 
 	 * @param maxCacheSize maximum size of internal metadata cache
 	 */
-	public ClassIntrospector(int maxCacheSize) {
+	public ClassIntrospector(final int maxCacheSize) {
 		classMetadataCache = new LRUCache<String, ClassMetadata>(maxCacheSize);
 	}
 	
